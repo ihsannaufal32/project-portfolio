@@ -8,3 +8,8 @@ npm init
 npm install express
 npm i cors
 npm i nodemon --save-dev
+
+folder FE/
+npm create vite@latest
+cd latihanfe
+npm init
