@@ -10,9 +10,9 @@ function App() {
 
   useEffect(() => {
     // Ganti URL dengan alamat server Express kamu
-    fetch('http://192.168.1.8:8080/data')
+    fetch('http://192.168.1.8:8080/')
       .then(response => response.json())
-      .then(data => setData(data.data))
+      .then(data => setData(data.data[0].username))
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
@@ -20,8 +20,8 @@ function App() {
     <>
       <header>
         <nav>
-            <div class="responsivenavbar" id="navbar">
-                <a href="#home" class="active">
+            <div className="responsivenavbar" id="navbar">
+                <a href="#home" className="active">
                   <img src={viteLogo} alt="" />
                   </a>
                 <a href="#pendidikan" id="textnav">Profil</a>
@@ -30,14 +30,14 @@ function App() {
                 <a href="#about" id="textnav">Kontak</a>
                 <input type="text" name="search" placeholder="Search.." id="searchnavbar"/>
                 <button id="tombolsearchnav">Cari</button>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
+                <a href="javascript:void(0);" className="icon" onclick="myFunction()">
+                  <i className="fa fa-bars"></i>
                 </a>
               </div>
         </nav>
     </header>
       <h1>Bismillah Portfolio</h1>
-      <p>{data}</p>
+      <p>Selamat datang! {data}</p>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logovite" alt="Vite logo" />

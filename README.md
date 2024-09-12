@@ -8,6 +8,16 @@ npm init
 npm install express
 npm i cors
 npm i nodemon --save-dev
+npm install pg
+ubuntu -> vim /etc/postgresql/16/main/postgresql.conf {
+    ubah line 60
+    listen_addreses = "*"
+}
+Ubuntu -> vim /etc/postgresql/16/main/pg_hba.conf {
+    tambah line
+    host    contohbe    fallmoonproject 192.168.1.8/32  md5
+}
+
 
 folder FE/
 npm create vite@latest
