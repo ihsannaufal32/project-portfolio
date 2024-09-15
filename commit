@@ -12,7 +12,10 @@ else
 	read confirm
 
 	if [ ${confirm} == 'y' ]; then
-		echo "git push"
+		git push
+		echo "sudah dipush :)"
+		break 5
+		clear
 	elif [ ${confirm} == 'n' ]; then
 		echo "Tidak jadi"
 	else
