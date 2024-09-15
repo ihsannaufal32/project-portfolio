@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.png'
 import viteLogo from './assets/vite.png'
 import nodelogo from './assets/Node.js.png'
+import foto from './assets/pasfoto.png'
 import './App.css'
 
 function App() {
@@ -20,33 +21,38 @@ function App() {
     <>
       <header>
         <nav>
-            <div className="responsivenavbar" id="navbar">
-                <a href="#home" className="active">
-                  <img src={viteLogo} alt="" />
-                  </a>
-                <a href="#pendidikan" id="textnav">Profil</a>
-                <a href="#olahraga" id="textnav">Project</a>
-                <a href="#kesehatan" id="textnav">Sertifikat</a>
-                <a href="#about" id="textnav">Kontak</a>
-                <input type="text" name="search" placeholder="Search.." id="searchnavbar"/>
-                <button id="tombolsearchnav">Cari</button>
-                <a href="javascript:void(0);" className="icon" onclick="myFunction()">
-                  <i className="fa fa-bars"></i>
-                </a>
-              </div>
+          <div class="h-20" id="responsivenavbar">
+            <a href="#home" className="active" >
+              <img src={viteLogo} class="h-20" id="logonav" alt="" />
+            </a>
+              <a href="#pendidikan" class="mt-7" id="textnav">Profil</a>
+              <a href="#olahraga" class="mt-7" id="textnav">Project</a>
+              <a href="#kesehatan" class="mt-7" id="textnav">Sertifikat</a>
+              <a href="#about" class="mt-7" id="textnav">Kontak</a>
+            <div class="float-end mr-7 mt-5">
+              <input type="text" name="search" class="rounded-md py-1 pl-4" placeholder="Search.." id="searchnavbar"/>
+              <button class="ml-7"id="tombolsearchnav">Cari</button>
+              <a href="javascript:void(0);" className="icon" onclick="myFunction()">
+              <i className="fa fa-bars"></i>
+              </a>
+            </div>
+          </div>
         </nav>
     </header>
-      <h1>Bismillah Portfolio</h1>
-      <p>Selamat datang! {data}</p>
-      <div>
+      <h1 class="py-5 pl-5">Halo <span class="font-bold">{data}</span>, Selamat datang!</h1>
+      <div class="flex place-content-center">
+        <img src={foto} class="rounded-full h-40" alt="foto" />
+      </div>
+      <h1 class="text-center">Muhammad Ihsan Naufal Muniif</h1>
+      <div class="flex flex-row items-center place-content-center	">
         <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logovite" alt="Vite logo" />
+          <img src={viteLogo} class="h-52" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logoreact" alt="React logo" />
+          <img src={reactLogo} class="h-40 px-10" alt="React logo" />
         </a>
         <a href="">
-          <img src={nodelogo} className="logonode" alt="node logo" />
+          <img src={nodelogo} class="h-40" alt="node logo" />
         </a>
       </div>
       <h1>Vite + React</h1>

@@ -23,3 +23,6 @@ folder FE/
 npm create vite@latest
 cd latihanfe
 npm init
+// Penambahan Tailwinds css
+npm install -D tailwindcss
+npx tailwindcss init

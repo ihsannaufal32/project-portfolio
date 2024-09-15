@@ -4,8 +4,6 @@ const { Pool } = require('pg');
 const app = express();
 const port = 8080;
 const host = '192.168.1.8'
-app.use(express.json());
-app.use(cors());
 const pool = new Pool({
 	user: 'fallmoonproject',
 	host: '192.168.1.201',
@@ -13,6 +11,9 @@ const pool = new Pool({
 	password: '@Mian123',
 	port: 5432,
 });
+
+app.use(express.json());
+app.use(cors());
 
 pool.connect((err) => {
 	if (err) throw err;

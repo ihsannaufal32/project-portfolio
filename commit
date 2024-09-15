@@ -1,0 +1,21 @@
+#!/bin/bash
+
+git add .
+if [ $? -eq 1 ]; then
+	echo "gagal menambahkan"
+else
+	echo "semua sudah di add"
+	echo "Masukkan pesan:"
+	read commitmsg
+	git commit -m "${commitmsg}"
+	echo "Are you sure? (y/n)"
+	read confirm
+
+	if [ ${confirm} == 'y' ]; then
+		echo "git push"
+	elif [ ${confirm} == 'n' ]; then
+		echo "Tidak jadi"
+	else
+		echo "masukin opsi yang betul bro"
+	fi
+fi
