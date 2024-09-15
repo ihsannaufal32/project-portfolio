@@ -14,7 +14,7 @@ else
 	if [ ${confirm} == 'y' ]; then
 		git push
 		echo "sudah dipush :)"
-		pause 5
+		sleep 5
 		clear
 	elif [ ${confirm} == 'n' ]; then
 		echo "Tidak jadi"
