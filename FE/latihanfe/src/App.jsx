@@ -19,26 +19,6 @@ function App() {
 
   return (
     <>
-      <header>
-        <div class="h-20" id="responsivenavbar">
-          <nav>
-            <a href="#home" className="active" >
-              <img src={viteLogo} class="h-20" id="logonav" alt="" />
-            </a>
-              <a href="#pendidikan" class="mt-7" id="textnav">Profil</a>
-              <a href="#olahraga" class="mt-7" id="textnav">Project</a>
-              <a href="#kesehatan" class="mt-7" id="textnav">Sertifikat</a>
-              <a href="#about" class="mt-7" id="textnav">Kontak</a>
-            <div class="float-end mr-7 mt-5">
-              <input type="text" name="search" class="rounded-md py-1 pl-4" placeholder="Search.." id="searchnavbar"/>
-              <button class="ml-7"id="tombolsearchnav">Cari</button>
-              <a href="javascript:void(0);" className="icon" onclick="myFunction()">
-              <i className="fa fa-bars"></i>
-              </a>
-            </div>
-          </nav>
-        </div>
-    </header>
       <h1 class="py-5 pl-5">Halo <span class="font-bold">{data}</span>, Selamat datang!</h1>
       <div class="flex place-content-center">
         <img src={foto} class="rounded-full h-40" alt="foto" />
