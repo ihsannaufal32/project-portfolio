@@ -47,6 +47,21 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+    <div class="container mx-auto">
+      <h1>Komentar & Feedback</h1>
+      <form class="flex flex-col mt-5">
+          <textarea class="border border-gray-300 p-2 rounded-md mb-2" placeholder="Tulis komentar Anda"></textarea>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Kirim</button>
+      </form>
+      <div class="flex flex-col">
+        <div class="mt-4">
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <p class="text-gray-700">Komentar 1: Ini adalah contoh komentar pertama.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
     </>
   )
 }
