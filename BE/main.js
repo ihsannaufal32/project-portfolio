@@ -3,7 +3,7 @@ const cors = require("cors");
 const { Pool } = require('pg');
 const app = express();
 const port = 8080;
-const host = '192.168.1.8'
+const host = '192.168.1.26'
 const pool = new Pool({
 	user: 'fallmoonproject',
 	host: '192.168.1.201',

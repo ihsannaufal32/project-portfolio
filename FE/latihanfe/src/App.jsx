@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.png'
 import viteLogo from './assets/vite.png'
 import nodelogo from './assets/Node.js.png'
-import foto from './assets/pasfoto.png'
+import foto from './assets/pasfoto.jpg'
 import './App.css'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     // Ganti URL dengan alamat server Express kamu
-    fetch('http://192.168.1.8:8080/')
+    fetch('http://192.168.1.26:8080/')
       .then(response => response.json())
       .then(data => setData(data.data[0].username))
       .catch(error => console.error('Error fetching data:', error));
@@ -20,8 +20,8 @@ function App() {
   return (
     <>
       <header>
-        <nav>
-          <div class="h-20" id="responsivenavbar">
+        <div class="h-20" id="responsivenavbar">
+          <nav>
             <a href="#home" className="active" >
               <img src={viteLogo} class="h-20" id="logonav" alt="" />
             </a>
@@ -36,8 +36,8 @@ function App() {
               <i className="fa fa-bars"></i>
               </a>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
     </header>
       <h1 class="py-5 pl-5">Halo <span class="font-bold">{data}</span>, Selamat datang!</h1>
       <div class="flex place-content-center">
