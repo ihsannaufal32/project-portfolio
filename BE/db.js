@@ -1,4 +1,3 @@
-const {Client} = require('pg');
 const { Pool } = require('pg');
 
 const pool = new Pool({
@@ -13,3 +12,7 @@ pool.connect((err) => {
 	if (err) throw err;
 	console.log("DBconnect");
 });
+
+module.exports = {
+	pool,
+};
