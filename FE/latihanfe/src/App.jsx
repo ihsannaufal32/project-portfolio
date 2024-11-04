@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.png'
-import viteLogo from './assets/vite.png'
+import reactLogo from './assets/React.png'
+import viteLogo from './assets/Vite.png'
 import nodelogo from './assets/Node.js.png'
 import foto from './assets/pasfoto.jpg'
 import './App.css'
@@ -16,6 +16,25 @@ function App() {
       .then(data => setData(data.data[0].username))
       .catch(error => console.error('Error fetching data:', error));
   }, []);
+
+  const datakomen = [
+    {
+      id: 1,
+      komen: "komentar pertama"
+    },
+    {
+      id: 2,
+      komen: "Komentar kedua"
+    },
+    {
+      id: 3,
+      komen: "komentar ketiga"
+    },
+    {
+      id: 4,
+      komen: "komentar cek "
+    }
+  ]
 
   return (
     <>
@@ -55,45 +74,21 @@ function App() {
       </form>
       <div class="flex flex-col">
         <div class="mt-4">
-          <div class="bg-white p-4 rounded-lg shadow-md">
-            <p class="text-gray-700">Komentar 1: Ini adalah contoh komentar pertama.</p>
-          </div>
+          {datakomen.slice(0, 4).map((datakomen) => {
+            return (
+              <div key={datakomen.id} class="bg-white p-4 rounded-lg shadow-md my-2">
+                <p class="text-gray-700">{datakomen.id}</p>
+                <p class="text-gray-700">Komentar: {datakomen.komen}.</p>
+              </div>
+            )
+          })}
+          
         </div>
       </div>
-  
     </div>
       
     </>
   )
 }
 
-
-// Data komentar (contoh)
-const comments = [
-  { id: 1, author: 'John Doe', content: 'Komentar pertama', date: '2023-11-01' },
-  { id: 2, author: 'Jane Smith', content: 'Komentar kedua', date: '2023-11-02' },
-  // ... dan seterusnya
-];
-
-// Komponen komentar
-function Comment({ comment }) {
-  return (
-    <div className="p-4 bg-white rounded-lg shadow-md">
-      <p className="font-bold">{comment.author}</p>
-      <p className="text-gray-700">{comment.content}</p>
-      <p className="text-xs text-gray-500">{comment.date}</p>
-    </div>
-  );
-}
-
-// Komponen daftar komentar
-function CommentList({ comments }) {
-  return (
-    <div className="mt-4">
-      {comments.map((comment) => (
-        <Comment key={comment.id} comment={comment} />
-      ))}
-    </div>
-  );
-}
 export default App
