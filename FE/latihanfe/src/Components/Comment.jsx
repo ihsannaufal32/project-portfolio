@@ -24,8 +24,9 @@ const datakomen = [
 function Comment(){
     return (
       <div>
-        <h1>Komentar & Feedback</h1>
         <div class="container mx-auto">
+        <h1>Komentar & Feedback</h1>
+        <p>Terima kasih telah berkunjung ke web ini! Saya akan sangan mengapresiasi apabila anda dapat meninggalkan komentar dan memberikan feedback.</p>
           <form class="flex flex-col mt-5">
               <h2>Nama</h2>
               <textarea class="border border-gray-300 p-1 rounded-md px-2" placeholder="Tulis Nama Anda"></textarea>
