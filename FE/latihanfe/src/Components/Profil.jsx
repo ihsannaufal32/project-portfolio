@@ -1,19 +1,10 @@
-import { useState, useEffect } from 'react';
 import foto from "../assets/pasfoto.jpg";
 import upi from "../assets/Upi.png";
 
 function Profil(){
-    const [umur, setumur] = useState();
-    const birthdate = new Date('2002-05-26');
-
-    useEffect(() => {
-        const hitungumur = () => {
-            const sekarang = new Date();
-            const umur = sekarang.getFullYear() - birthdate.getFullYear();
-            setumur(umur);
-        };
-        hitungumur();
-    });
+    const birthdate = new Date('2002-02-24');
+    const sekarang = new Date();
+    const umur = sekarang.getFullYear() - birthdate.getFullYear();
 
     return(
         <div>

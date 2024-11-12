@@ -2,10 +2,8 @@ import reactLogo from '../assets/React.png'
 import viteLogo from '../assets/Vite.png'
 import nodelogo from '../assets/Node.js.png'
 import ubuntulogo from '../assets/Ubuntu.png'
-import { useState } from 'react'
 
 function About(){
-    const [count, setCount] = useState(0)
     return(
         <div className='container mx-auto'>
             <h1>About</h1>
