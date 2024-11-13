@@ -7,7 +7,7 @@ function Profil(){
     const umur = sekarang.getFullYear() - birthdate.getFullYear();
 
     return(
-        <div>
+        <div className="container mx-auto">
             <div class="flex place-content-center">
               <img src={foto} class="rounded-full h-40" alt="foto" />
             </div>
