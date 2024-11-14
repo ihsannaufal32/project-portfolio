@@ -1,5 +1,5 @@
 import foto from "../assets/pasfoto.jpg";
-import upi from "../assets/Upi.png";
+import upi from "../assets/upi1.png";
 
 function Profil(){
     const birthdate = new Date('2002-02-24');
@@ -8,10 +8,10 @@ function Profil(){
 
     return(
         <div className="container mx-auto">
-            <div class="flex place-content-center">
-              <img src={foto} class="rounded-full h-40" alt="foto" />
+            <div className="flex place-content-center">
+              <img src={foto} className="rounded-full h-40" alt="foto" />
             </div>
-            <h1 class="text-center">Muhammad Ihsan Naufal Muniif</h1>
+            <h1 className="text-center">Muhammad Ihsan Naufal Muniif</h1>
             <div className="mx-10">
                 <hr />
                 <p className="text-center">
@@ -20,10 +20,11 @@ function Profil(){
                 <br />
                 <h2>Pendidikan</h2>
                 <div className="flex flex-wrap">
-                    <div className="size-1/4">
-                        <img src={upi} alt="" />
+                    <div>
+                        <img src={upi} className="bg-white rounded-full size-40" alt="Logo Universitas Pendidikan Indonesia" />
+                        <p className="text-center">Universitas Pendidikan Indonesia</p>
                     </div>
-                    <div className="place-content-center">
+                    <div className="place-content-center ml-10">
                         <p>1 September 2020 - 30 November 2024</p>
                     </div>
                 </div>

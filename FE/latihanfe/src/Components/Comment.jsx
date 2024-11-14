@@ -24,18 +24,18 @@ const datakomen = [
 function Comment(){
     return (
       <div>
-        <div class="container mx-auto">
+        <div className="container mx-auto">
         <h1>Komentar & Feedback</h1>
         <p>Terima kasih telah berkunjung ke web ini! Saya akan sangan mengapresiasi apabila anda dapat meninggalkan komentar dan memberikan feedback.</p>
-          <form class="flex flex-col mt-5">
-              <h2>Nama</h2>
-              <textarea class="border border-gray-300 p-1 rounded-md px-2" placeholder="Tulis Nama Anda"></textarea>
+          <form className="flex flex-col mt-5">
+              <h2>Nama</h2>Name
+              <textarea className="border border-gray-300 p-1 rounded-md px-2 caret-red-700" placeholder="Tulis Nama Anda"></textarea>
               <h2>Komentar</h2>
-              <textarea class="border border-gray-300 p-2 rounded-md my-2 px-2" placeholder="Tulis komentar Anda"></textarea>
-              <button class="bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded">Kirim</button>
+              <textarea className="border border-gray-300 p-2 rounded-md my-2 px-2" placeholder="Tulis komentar Anda"></textarea>
+              <button className="bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded">Kirim</button>
           </form>
-          <div class="flex flex-col">
-            <div class="mt-4">
+          <div className="flex flex-col">
+            <div className="mt-4">
               {datakomen.slice(0, 4).map((datakomen) => {
                 return (
                   <div key={datakomen.id} class="bg-gray-500 p-4 rounded-lg shadow-md my-2 text-white hover:bg-gray-700">

@@ -20,12 +20,12 @@ function About(){
                 </div>
                 <div>
                     <a href="https://react.dev" target="_blank">
-                        <img src={reactLogo} class="h-40 px-10" alt="React logo" />
+                        <img src={reactLogo} className="h-40 px-10" alt="React logo" />
                     </a>
                 </div>
                 <div>
                     <a href="">
-                        <img src={nodelogo} class="h-40" alt="node logo" />
+                        <img src={nodelogo} className="h-40" alt="node logo" />
                     </a>    
                 </div>
                 <div>

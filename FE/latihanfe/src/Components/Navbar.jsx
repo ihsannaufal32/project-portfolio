@@ -1,21 +1,19 @@
 function Navbar(){
     return(
-        <div className="justify-items-center bg-red-700 ">
-            <nav>
-                <div className="bg-white">
-                    <div className="flex flex-wrap">
-                        <div className="bg-violet-700">
-                            <a href=""><h1>Profil</h1></a>
+        <div className="sticky z-10 top-0 justify-items-center bg-red-700">
+                <nav>
+                    <div className="flex flex-wrap py-3">
+                        <div className="ml-5">
+                            <h2>Profil</h2>
                         </div>
-                        <div className="bg-green-700 mx-10">
-                            <a href=""><h1>Home</h1></a>
+                        <div className="mx-10">
+                            <h2>Home</h2>
                         </div>
-                        <div className="bg-yellow-700">
-                            <a href=""><h1>About</h1></a>
+                        <div className="mr-5">
+                            <h2>About</h2>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
         </div>
     );
 };
