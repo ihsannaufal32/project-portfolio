@@ -1,6 +1,7 @@
 const datakomen = [
   {
     id: 1,
+    nama: "Ahmad",
     komen: "komentar pertama",
     tanggal: "11/09/2001"
   },
@@ -36,18 +37,18 @@ function Comment(){
           </form>
           <div className="flex flex-col">
             <div className="mt-4">
-              {datakomen.slice(0, 4).map((datakomen) => {
+              {datakomen.slice(0, 1).map((datakomen) => {
                 return (
                   <div key={datakomen.id} class="bg-gray-500 p-4 rounded-lg shadow-md my-2 text-white hover:bg-gray-700">
                     <div className="flex justify-between">
                         <div>
-                          <p>{datakomen.id}</p>
+                          <p>{datakomen.nama}</p>
                         </div>
                         <div>
                           <p>{datakomen.tanggal}</p>
                         </div>
                     </div>
-                    <p>Komentar: {datakomen.komen}.</p>
+                    <p>{datakomen.komen}.</p>
                   </div>
                 )
               })}

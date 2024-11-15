@@ -9,12 +9,13 @@ npm install express
 npm i cors
 npm i nodemon --save-dev
 npm install pg
+//konfigurasi postgresql
 ubuntu -> vim /etc/postgresql/16/main/postgresql.conf {
-    ubah line 60
+    //ubah line 60
     listen_addreses = "*"
 }
 Ubuntu -> vim /etc/postgresql/16/main/pg_hba.conf {
-    tambah line
+    //tambah line
     host    contohbe    fallmoonproject 192.168.1.8/32  md5
 }
 
@@ -26,3 +27,7 @@ npm init
 // Penambahan Tailwinds css
 npm install -D tailwindcss
 npx tailwindcss init
+// Instalasi Font Awesome--
+npm i --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome

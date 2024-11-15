@@ -20,18 +20,23 @@ function Profil(){
                 <br />
                 <h2>Pendidikan</h2>
                 <div className="flex flex-wrap">
-                    <div>
                         <img src={upi} className="bg-white rounded-full size-40" alt="Logo Universitas Pendidikan Indonesia" />
-                        <p className="text-center">Universitas Pendidikan Indonesia</p>
-                    </div>
                     <div className="place-content-center ml-10">
+                        <b><p>Universitas Pendidikan Indonesia</p></b>
                         <p>1 September 2020 - 30 November 2024</p>
+                        <p>IPK: 3.63/4.00 (Cumlaude)</p>
                     </div>
                 </div>
                 <br />
                 <h2>Sertifikat</h2>
+                <h3>Red Hat Certified System Adminisrator</h3>
                 <br />
                 <h2>Proyek</h2>
+                <h3>Fracture Vision</h3>
+                <h3>Aplikasi Peminjaman Alat dan Penggunaan Lab Robotika</h3>
+                <h3>CeTar (Celengan Pintar)</h3>
+                <h3>Gerak Tanggap Darurat</h3>
+                <h3>Sistem Monitoring & Penyiraman Tanaman Otomatis Berbasis IoT</h3>
             </div>
         </div>
     );

@@ -11,7 +11,7 @@ function Header(){
     }, []);
     return(
         <div>
-            <h1 className="py-5 pl-5">Halo <span class="font-bold">{data}</span>, Selamat datang!</h1>
+            <h1 className="py-5 pl-5">Halo <span className="font-bold">{data}</span>, Selamat datang!</h1>
         </div>
     );
 };
