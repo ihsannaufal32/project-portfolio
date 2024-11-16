@@ -3,9 +3,9 @@ import { faExternalLinkAlt, faEnvelope, faAddressBook, faLocationDot} from '@for
 import { faLinkedin, faInstagram, faGithub, faDocker } from '@fortawesome/free-brands-svg-icons'
 function Footer(){
     return(
-        <div className='bg-red-700'>
+        <div className='bg-gradient-to-r from-red-900 to-violet-900'>
             <footer>
-                <div className="container mx-auto flex flex-wrap justify-between bg-red-700">
+                <div className="container mx-auto flex flex-wrap justify-between">
                     <div className='text-left'>
                         <h2>Contact Person</h2>
                         <h3><FontAwesomeIcon icon={faEnvelope}/> naufalihsanwork@gmail.com</h3>
@@ -29,7 +29,7 @@ function Footer(){
                     </div>
                 </div>
                 <div className='text-center bg-red-900'>
-                    <h3>Copyright © 2024 Muhammad Ihsan Naufal Muniif</h3>
+                    <h3>Created by ❤️ 2024 @ Muhammad Ihsan Naufal Muniif</h3>
                 </div>
             </footer>
         </div>

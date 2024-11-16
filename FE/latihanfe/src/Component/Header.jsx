@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { TypeAnimation } from 'react-type-animation'
 
 function Header(){
     const [data, setData] = useState('');
@@ -10,10 +11,33 @@ function Header(){
         .catch(error => console.error('Error fetching data:', error));
     }, []);
     return(
-        <div>
-            <h1 className="py-5 pl-5">Halo <span className="font-bold">{data}</span>, Selamat datang!</h1>
+        <div className='bg-gradient-to-r from-red-700 to-violet-700'>
+            <div className='container mx-auto'>
+                <h1 className='text-center'> 
+                <TypeAnimation
+                    sequence={[
+                        'Selamat Datang!',
+                        2000,
+                        'Welcome!',
+                        2000,
+                        'ようこそ!',
+                        2000,
+                        'Bienvenido!',
+                        2000,
+                        'Добро пожаловать!',
+                        3000,
+                    ]}
+                    wrapper="span"
+                    cursor={true}
+                    repeat={Infinity}
+                    />
+                </h1>
+                <h1>
+                    Halo! {data}
+                </h1>
+            </div>
         </div>
-    );
+    );  
 };
 
 export default Header
