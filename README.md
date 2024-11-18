@@ -9,7 +9,7 @@ npm install express
 npm i cors
 npm i nodemon --save-dev
 npm install pg
-//konfigurasi postgresql
+//konfigurasi postgresql pada server
 ubuntu -> vim /etc/postgresql/16/main/postgresql.conf {
     //ubah line 60
     listen_addreses = "*"
@@ -30,4 +30,6 @@ npx tailwindcss init
 // Instalasi Font Awesome--
 npm i --save @fortawesome/fontawesome-svg-core
 npm install --save @fortawesome/free-solid-svg-icons
-npm install --save @fortawesome/react-fontawesome
+npm install --save @fortawesome/react-
+// Instalasi type animation
+npm i react-type-animation
