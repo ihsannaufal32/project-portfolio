@@ -9,7 +9,7 @@ function Profil(){
     return(
         <div className="container mx-auto">
             <div className="flex place-content-center">
-              <img src={foto} className="rounded-full h-40" alt="foto" />
+              <img src={foto} className="rounded-full h-40 select-none" alt="foto" />
             </div>
             <h1 className="text-center">Muhammad Ihsan Naufal Muniif</h1>
             <div className="mx-10">
