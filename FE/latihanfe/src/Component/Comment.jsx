@@ -1,3 +1,4 @@
+import { useState } from "react";
 const datakomen = [
   {
     id: 1,
@@ -23,6 +24,11 @@ const datakomen = [
 ]
 
 function Comment(){
+  const [klik, setKlik] = useState(false);
+  const cbutton = () => {
+    setKlik(true);
+    alert('coming soon');
+  }
     return (
       <div>
         <div className="container mx-auto">
@@ -30,10 +36,10 @@ function Comment(){
         <p>Terima kasih telah berkunjung ke web ini! Saya akan sangan mengapresiasi apabila anda dapat meninggalkan komentar dan memberikan feedback.</p>
           <form className="flex flex-col mt-5">
               <h2>Nama</h2>Name
-              <textarea className="border border-gray-300 p-1 rounded-md px-2 caret-red-700" placeholder="Tulis Nama Anda"></textarea>
+              <textarea className="border border-gray-300 p-1 rounded-md px-2" placeholder="Tulis Nama Anda"></textarea>
               <h2>Komentar</h2>
               <textarea className="border border-gray-300 p-2 rounded-md my-2 px-2" placeholder="Tulis komentar Anda"></textarea>
-              <button className="bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded">Kirim</button>
+              <button onClick={cbutton} className="bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded">Submit</button>
           </form>
           <div className="flex flex-col">
             <div className="mt-4">

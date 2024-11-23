@@ -8,7 +8,7 @@ function Navbar(){
                 <div className="ml-5">
                     <h2>Profil</h2>
                 </div>
-                <div className="mx-10">
+                <div className="mx-10 hidden sm:block">
                     <h2>Home</h2>
                 </div>
                 <div className="mr-5">

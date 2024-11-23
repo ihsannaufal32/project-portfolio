@@ -5,14 +5,14 @@ function Footer(){
     return(
         <div className='bg-gradient-to-r from-red-900 to-violet-900'>
             <footer>
-                <div className="container mx-auto flex flex-wrap justify-between">
-                    <div className='text-left'>
+                <div className="flex flex-col px-5 sm:flex-row sm:px-0 container mx-auto justify-between">
+                    <div className='text-left sm:text-left'>
                         <h2>Contact Person</h2>
                         <h3><FontAwesomeIcon icon={faEnvelope}/> naufalihsanwork@gmail.com</h3>
                         <h3><FontAwesomeIcon icon={faAddressBook}/> (+62) 851-7965-2605</h3>
                         <h3><FontAwesomeIcon icon={faLocationDot}/> Bandung, Indonesia</h3>
                     </div>
-                    <div className='text-right'>
+                    <div className='text-left sm:text-right'>
                         <h2>Sosial Media</h2>
                         <a href="https://www.instagram.com/ihsannaufal32" className="text-white hover:text-grey-700">
                             <h3><FontAwesomeIcon icon={faInstagram}/> /Ihsannaufal32 <FontAwesomeIcon icon={faExternalLinkAlt}/></h3>
@@ -28,7 +28,7 @@ function Footer(){
                         </a>
                     </div>
                 </div>
-                <div className='text-center bg-red-900'>
+                <div className='text-center bg-red-900 mt-5'>
                     <h3>Created by ❤️ 2024 @ Muhammad Ihsan Naufal Muniif</h3>
                 </div>
             </footer>
