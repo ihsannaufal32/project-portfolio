@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Landingpage/Home';
-import Ceck from './Pages/Landingpage/cek'
+import Ceck from './Pages/cek/cek'
 import './App.css';
 
 function App() {

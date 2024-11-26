@@ -20,7 +20,7 @@ const callsToAction = [
   { name: 'Contact sales', href: '#', icon: PhoneIcon },
 ]
 
-function cek() {
+function Testnavbar() {
   return (
     <div className='bg-white'>
     <Popover className="relative">
@@ -73,4 +73,4 @@ function cek() {
   )
 }
 
-export default cek
+export default Testnavbar
