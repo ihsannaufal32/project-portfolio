@@ -33,3 +33,5 @@ npm install --save @fortawesome/free-solid-svg-icons
 npm install --save @fortawesome/react-
 // Instalasi type animation
 npm i react-type-animation
+//headlessui react
+npm install @headlessui/react @heroicons/react
