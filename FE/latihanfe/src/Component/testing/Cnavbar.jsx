@@ -11,7 +11,6 @@ function Cnavbar() {
                 <PopoverPanel transition className="bg-yellow">
                     <h1>cek</h1>
                     <h2>halo</h2>
-                    <h1>cekjenkins</h1>
                 </PopoverPanel>
             </Popover>
         </div>
