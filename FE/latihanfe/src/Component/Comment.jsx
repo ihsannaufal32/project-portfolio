@@ -3,7 +3,7 @@ const datakomen = [
   {
     id: 1,
     nama: "Ahmad",
-    komen: "komentar pertama",
+    komen: "Auto Deploy Jenkins Berhasil!!!",
     tanggal: "11/09/2001"
   },
   {
