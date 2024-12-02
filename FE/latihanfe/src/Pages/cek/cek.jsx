@@ -1,4 +1,4 @@
-import Testnavbar from "../../Component/testing/testnavbar";
+import Testnavbar from "../../Component/testing/Testnavbar";
 import Customnavbar from "../../Component/testing/Cnavbar";
 
 function cek(){
