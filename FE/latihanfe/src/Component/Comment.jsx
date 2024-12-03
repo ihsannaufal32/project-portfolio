@@ -19,7 +19,7 @@ const datakomen = [
   {
     id: 4,
     komen: "komentar cek ",
-    tanggal: "DD/MM/YYYY"
+    tanggal: "11/MM/YYYY"
   }
 ]
 
