@@ -1,25 +1,35 @@
 #!/bin/bash
 
-git add .
-git checkout main
-if [ $? -eq 1 ]; then
-	echo "gagal menambahkan"
-else
-	echo "semua sudah di add"
-	echo "Masukkan pesan:"
-	read commitmsg
-	git commit -m "${commitmsg}"
-	echo "Are you sure? (y/n)"
-	read confirm
-
-	if [ ${confirm} == 'y' ]; then
-		git push
-		echo "sudah dipush :)"
-		sleep 5
-		clear
-	elif [ ${confirm} == 'n' ]; then
-		echo "Tidak jadi"
+echo "Ingin merge dan push? (y/n)"
+read mergepush
+if [ ${mergepush} == 'y' ]; then	
+	git checkout main
+	git merge frontend
+	git merge backend
+	if [ $? -eq 1 ]; then
+		echo "gagal merge"
 	else
-		echo "masukin opsi yang betul bro"
+		echo "semua sudah di add"
+		echo "Masukkan pesan:"
+		read commitmsg
+		git commit -a -m "${commitmsg}"
+		echo "Are you sure? (y/n)"
+		read confirm
+
+		if [ ${confirm} == 'y' ]; then
+			git push
+			echo "sudah dipush :)"
+			sleep 5
+			clear
+		elif [ ${confirm} == 'n' ]; then
+			echo "Tidak jadi"
+		else
+			echo "masukin opsi yang betul bro"
+		fi
 	fi
+elif [ ${mergepush} == 'n' ]; then
+	echo "tidak jadi"
+else
+	echo"opsi tidak valid"
 fi
+
