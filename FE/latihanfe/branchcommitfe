@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Ingin melakukan push ke branch frontend?"
+echo "Ingin melakukan push ke branch frontend? (y/n)"
 read pushbranch
 if [ ${pushbranch} == 'y' ]; then
 	git checkout frontend
@@ -15,7 +15,7 @@ if [ ${pushbranch} == 'y' ]; then
 		echo "Are you sure? (y/n)"
 		read confirm
 		if [ ${confirm} == 'y' ]; then
-			git push
+			git push -u origin frontend
 			echo "sudah dipush :)"
 			sleep 5
 			clear
