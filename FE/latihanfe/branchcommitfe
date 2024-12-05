@@ -4,7 +4,7 @@ echo "Ingin melakukan push ke branch frontend?"
 read pushbranch
 if [ ${pushbranch} == 'y' ]; then
 	git checkout frontend
-	git add .
+	git add . >> /dev/null
 	if [ $? -eq 1 ]; then
 		echo "gagal menambahkan"
 	else
