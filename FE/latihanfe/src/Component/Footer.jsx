@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt, faEnvelope, faAddressBook, faLocationDot} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faInstagram, faGithub, faDocker } from '@fortawesome/free-brands-svg-icons'
-import sosmed from "Sosmed"
+import sosmed from "./Sosmed.jsx"
 const icon = {faLinkedin, faInstagram, faGithub, faDocker}
 
 function Footer(){
