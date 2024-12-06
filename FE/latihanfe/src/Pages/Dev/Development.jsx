@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram, faGithub, faDocker } from '@fortawesome/free-brands-svg-icons'
-import Sosmed from '../../Component/Sosmed';
+import Sosmed from '../../Component/Sosmed.jsx';
 
 const icon = {faLinkedin, faInstagram, faGithub, faDocker}
 
