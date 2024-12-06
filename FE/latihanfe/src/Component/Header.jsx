@@ -11,7 +11,7 @@ function Header(){
         .catch(error => console.error('Error fetching data:', error));
     }, []);
     return(
-        <div className='bg-gradient-to-r from-red-700 to-violet-700'>
+        <div className='bg-black'>
             <div className='container mx-auto'>
                 <h1 className='text-center select-none'> 
                 <TypeAnimation

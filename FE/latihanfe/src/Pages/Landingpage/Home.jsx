@@ -9,10 +9,12 @@ function Home(){
     return(
         <div>
             <Navbar/>
+            <div className="bg-gradient-to-t from-indigo-950 via-black to-black">
             <Header/>
             <Profil/>
             <About/>
             <Comment/>
+            </div>
             <Footer/>
         </div>
     );

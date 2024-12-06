@@ -1,9 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt, faEnvelope, faAddressBook, faLocationDot} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faInstagram, faGithub, faDocker } from '@fortawesome/free-brands-svg-icons'
+import Sosmed from "./Sosmed"
+const icon = {faLinkedin, faInstagram, faGithub, faDocker}
+
 function Footer(){
     return(
-        <div className='bg-gradient-to-r from-red-900 to-violet-900'>
+        <div className='bg-indigo-950'>
             <footer>
                 <div className="flex flex-col px-5 sm:flex-row sm:px-0 container mx-auto justify-between">
                     <div className='text-left sm:text-left'>
@@ -14,21 +17,18 @@ function Footer(){
                     </div>
                     <div className='text-left sm:text-right'>
                         <h2>Sosial Media</h2>
-                        <a href="https://www.instagram.com/ihsannaufal32" className="text-white hover:text-grey-700">
-                            <h3><FontAwesomeIcon icon={faInstagram}/> /Ihsannaufal32 <FontAwesomeIcon icon={faExternalLinkAlt}/></h3>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ihsannaufal32/" className="text-white hover:text-grey-700">
-                            <h3><FontAwesomeIcon icon={faLinkedin}/> /ihsannaufal32 <FontAwesomeIcon icon={faExternalLinkAlt}/></h3>
-                        </a>
-                        <a href="https://github.com/ihsannaufal32" className="text-white hover:text-grey-700">
-                            <h3><FontAwesomeIcon icon={faGithub}/> /ihsannaufal32 <FontAwesomeIcon icon={faExternalLinkAlt}/></h3>
-                        </a>
-                        <a href="https://hub.docker.com/u/ihsannaufal32" className="text-white hover:text-grey-700">
-                            <h3><FontAwesomeIcon icon={faDocker}/> /Ihsannaufal32 <FontAwesomeIcon icon={faExternalLinkAlt}/></h3>
-                        </a>
+                        {Sosmed.slice(0,4).map((sosmed) => {
+                            return(
+                                <div key={sosmed.id}>
+                                    <a href={sosmed.url}>
+                                        <h3 className='text-white hover:text-gray-300'><FontAwesomeIcon icon={icon[sosmed.icon]}/> {sosmed.username} <FontAwesomeIcon icon={faExternalLinkAlt}/></h3>
+                                    </a>
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
-                <div className='text-center bg-red-900 mt-5'>
+                <div className='text-center bg-yellow-700 mt-5'>
                     <h3>Created by ❤️ 2024 @ Muhammad Ihsan Naufal Muniif</h3>
                 </div>
             </footer>
