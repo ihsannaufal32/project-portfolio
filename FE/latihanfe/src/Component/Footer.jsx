@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt, faEnvelope, faAddressBook, faLocationDot} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faInstagram, faGithub, faDocker } from '@fortawesome/free-brands-svg-icons'
-import Sosmed from "./Sosmed"
+import sosmed from "Sosmed"
 const icon = {faLinkedin, faInstagram, faGithub, faDocker}
 
 function Footer(){
@@ -17,7 +17,7 @@ function Footer(){
                     </div>
                     <div className='text-left sm:text-right'>
                         <h2>Sosial Media</h2>
-                        {Sosmed.slice(0,4).map((sosmed) => {
+                        {sosmed.slice(0,4).map((sosmed) => {
                             return(
                                 <div key={sosmed.id}>
                                     <a href={sosmed.url}>
