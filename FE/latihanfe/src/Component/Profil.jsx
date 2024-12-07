@@ -23,7 +23,7 @@ function Profil(){
                     <div className="place-items-center">
                         <img src={upi} className="bg-white rounded-full size-40 sm:mr-10" alt="Logo Universitas Pendidikan Indonesia" />
                     </div>
-                    <div className="text-center sm:text-left place-content-center">
+                    <div className="text-center mt-5 sm:mt-0 sm:text-left place-content-center">
                         <b><p>Universitas Pendidikan Indonesia</p></b>
                         <p>1 September 2020 - 30 November 2024</p>
                         <p>IPK: 3.63/4.00 (Cumlaude)</p>
