@@ -35,3 +35,16 @@ npm install --save @fortawesome/react-
 npm i react-type-animation
 //headlessui react
 npm install @headlessui/react @heroicons/react
+
+jenkins deploy FE
+//Stop&remove docker images
+docker stop ihsanportofolio
+docker rm ihsanportofolio
+docker rmi -f project-portofolio:latest
+//build&run
+cd ~/workspace/jenkinsbelajarwebhook/FE/latihanfe/
+docker build -t project-portofolio:latest .
+docker run -d --restart unless-stopped -p 8000:8000 --name ihsanportofolio project-portofolio:latest
+//push image dockerhub
+docker tag project-portofolio:latest ihsannaufal32/project-portofolio
+docker image push ihsannaufal32/project-portofolio:latest
