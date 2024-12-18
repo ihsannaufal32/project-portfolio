@@ -19,7 +19,6 @@ Ubuntu -> vim /etc/postgresql/16/main/pg_hba.conf {
     host    contohbe    fallmoonproject 192.168.1.8/32  md5
 }
 
-
 folder FE/
 npm create vite@latest
 cd latihanfe
@@ -48,3 +47,31 @@ docker run -d --restart unless-stopped -p 8000:8000 --name ihsanportofolio proje
 //push image dockerhub
 docker tag project-portofolio:latest ihsannaufal32/project-portofolio
 docker image push ihsannaufal32/project-portofolio:latest
+
+//jenkins pipeline
+pipeline {
+    agent any
+
+    stages {
+        stage('Stop&remove docker images') {
+            steps {
+                sh "docker stop ihsanportofolio"
+                sh "docker rm ihsanportofolio"
+                sh "docker rmi -f project-portofolio:latest"
+            }
+        }
+        stage('build&deploy') {
+            steps {
+                git branch: 'deploy', credentialsId: 'github-ihsannaufal32', url: 'git@github.com:ihsannaufal32/project-portfolio.git'
+                sh "docker build -t project-portofolio:latest ~/workspace/fallmoonwebproject/FE/latihanfe/."
+                sh "docker run -d --restart unless-stopped -p 8000:8000 --name ihsanportofolio project-portofolio:latest"
+            }
+        }
+        stage ('push image') {
+            steps {
+                sh "docker tag project-portofolio:latest ihsannaufal32/project-portofolio"
+                sh "docker image push ihsannaufal32/project-portofolio:latest"
+            }
+        }
+    }
+}
